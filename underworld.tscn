@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://h426ce6fmb65"]
+[gd_scene load_steps=8 format=3 uid="uid://h426ce6fmb65"]
 
 [ext_resource type="Texture2D" uid="uid://caefb13vfflfv" path="res://lvl2-block.png" id="1_mltdo"]
 [ext_resource type="Texture2D" uid="uid://b4leske1lb43e" path="res://lvl2-brick.png" id="2_bap2q"]
 [ext_resource type="PackedScene" uid="uid://dcxfy1h6aa4lu" path="res://player.tscn" id="3_wuwcj"]
+[ext_resource type="PackedScene" uid="uid://c814ods8os2n8" path="res://coin_gui.tscn" id="4_461lx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e6t3l"]
 texture = ExtResource("1_mltdo")
@@ -44,3 +45,5 @@ offset_top = 6.0
 offset_right = 16815.0
 offset_bottom = 8273.0
 color = Color(0.0372226, 5.77569e-07, 0.27126, 1)
+
+[node name="coin_gui" parent="." instance=ExtResource("4_461lx")]
