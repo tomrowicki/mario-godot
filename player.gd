@@ -68,8 +68,7 @@ func die():
 		print("Realoading scene")
 		get_tree().reload_current_scene()
 	else:
-		queue_free()
-		# switch to gameover scene
+		get_tree().change_scene_to_file("res://gameover.tscn")
 
 func move_player_up_and_down():
 	var start_position = position
