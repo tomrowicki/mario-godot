@@ -88,5 +88,8 @@ shape = SubResource("CircleShape2D_drlrm")
 [node name="questionblock" parent="." instance=ExtResource("10_ylroj")]
 position = Vector2(62, 594)
 
+[node name="questionblock2" parent="." instance=ExtResource("10_ylroj")]
+position = Vector2(25, 594)
+
 [connection signal="body_entered" from="interact" to="." method="_on_interact_body_entered"]
 [connection signal="body_entered" from="transition" to="." method="_on_transition_body_entered"]
